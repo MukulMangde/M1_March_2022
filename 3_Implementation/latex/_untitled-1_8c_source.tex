@@ -1,0 +1,25 @@
+\hypertarget{_untitled-1_8c_source}{}\doxysection{Untitled-\/1.c}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00001}00001 \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00002}00002 \textcolor{preprocessor}{\#include<math.h>}}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00003}00003 \textcolor{keywordtype}{int} check\_ArmstrongNumber(\textcolor{keywordtype}{int} num)}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00004}00004 \{}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00005}00005     \textcolor{keywordflow}{if} (num > 0)}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00006}00006     \textcolor{keywordflow}{return} (pow(num \% 10, 3) + check\_ArmstrongNumber(num / 10));}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00007}00007     }
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00008}00008 \}}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00010}00010 \textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00011}00011 \{}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00012}00012     \textcolor{keywordtype}{int} num;}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00013}00013     printf(\textcolor{stringliteral}{"{}Enter a number:"{}});}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00014}00014     scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&num);}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00015}00015     \textcolor{keywordflow}{if} (check\_ArmstrongNumber(num) == num)}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00016}00016         printf(\textcolor{stringliteral}{"{}YES"{}});}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00017}00017     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00018}00018         printf(\textcolor{stringliteral}{"{}NO"{}});}
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00019}00019   }
+\DoxyCodeLine{\Hypertarget{_untitled-1_8c_source_l00020}00020 \}}
+
+\end{DoxyCode}
